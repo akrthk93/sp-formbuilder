@@ -56,11 +56,43 @@
 					</div>
 					<div class="form-group draggable">
 						<label for="checkbox-1" >Checkboxes</label>
-						<input type="checkbox" class="form-control" id="checkbox-1">
-							<option value="Option 1">Option 1</option>
-							<option value="Option 2">Option 2</option>
-							<option value="Option 3">Option 3</option>
-						</input>
+						<div class="controls">
+							<label class="checkbox" for="checkbox_1">
+								<input type="checkbox" name="checkbox" id="checkbox_1">
+								Option 1
+							</label>
+							<label class="checkbox" for="checkbox_2">
+								<input type="checkbox" name="checkbox" id="checkbox_2">
+								Option 2
+							</label>
+							<label class="checkbox" for="checkbox_3">
+								<input type="checkbox" name="checkbox" id="checkbox_3">
+								Option 3
+							</label>
+						</div>
+						<p class="help-block">Example block-level help text here.</p>
+					</div>
+					<div class="form-group draggable">
+						<label for="radio-1" >Radios</label>
+						<div class="controls">
+							<label class="radio" for="radio_1">
+								<input type="radio" name="radio" id="radio_1">
+								Option 1
+							</label>
+							<label class="radio" for="radio_2">
+								<input type="radio" name="radio" id="radio_2">
+								Option 2
+							</label>
+							<label class="radio" for="radio_3">
+								<input type="radio" name="radio" id="radio_3">
+								Option 3
+							</label>
+						</div>
+						<p class="help-block">Example block-level help text here.</p>
+					</div>
+					<div class="form-group draggable">
+						<label for="input-date-1" >Date Input</label>
+						<input type="date" class="form-control" id="input-date-1" placeholder="Enter single-line text">
 						<p class="help-block">Example block-level help text here.</p>
 					</div>
 					<div class="form-group draggable">
@@ -69,9 +101,10 @@
 						<p class="help-block">Example block-level help text here.</p>
 					</div>
 					<div class="checkbox draggable">
-					<label>
-						<input type="checkbox"> <span >Check me out</span>
-					</label>
+						<input type="checkbox" id="invalidCheck" required>
+						<label class="form-check-label" for="invalidCheck">
+							Agree to terms and conditions
+						</label>
 					</div>
 					<div class="form-group draggable submitbtn">
 						<button type="submit" class="btn btn-default" >Submit</button>
