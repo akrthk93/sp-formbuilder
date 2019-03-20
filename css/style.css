@@ -32,6 +32,10 @@ body {
     margin-bottom: 20px;
 }
 
+.btnlabel {
+    font-weight: normal;
+}
+
 .submitbtn {
     padding-right: 20px;
 }
@@ -44,9 +48,11 @@ body {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
+    height: 810px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
 .buildertext {
     font-size: 24px;
+    margin: 0 auto;
 }
