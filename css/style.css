@@ -24,8 +24,12 @@ body {
 }
 
 .elements {
-    padding: 0px 30px 30px 30px; 
+    padding: 0px 30px 30px 30px;
     background-color: #fff;
+}
+
+.segment {
+    margin-bottom: 20px;
 }
 
 .submitbtn {
@@ -37,11 +41,12 @@ body {
 }
 
 .builder {
-    background-color: #fff; 
-    border-radius: 5px; 
-    padding: 20px; 
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
- .buildertext {
+
+.buildertext {
     font-size: 24px;
- }
+}

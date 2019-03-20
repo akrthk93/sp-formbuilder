@@ -35,28 +35,25 @@
 			<div class="col-md-3 elements">
 				<h3>Elements</h3>
 				<form role="form">
-					<div class="form-group draggable">
+					<div class="form-group draggable segment">
 						<label for="input-text-1" >Text Input</label>
 						<input type="email" class="form-control" id="input-id-1" placeholder="Enter single-line text">
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
+					<div class="form-group draggable segment">
 						<label for="input-textarea-1" >Textarea</label>
 						<textarea class="form-control" id="input-textarea-1" placeholder="Enter multiple-line text"></textarea>
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
+					<div class="form-group draggable segment">
 						<label for="select-1" >Select</label>
 						<select class="form-control" id="select-1">
 							<option value="Option 1">Option 1</option>
 							<option value="Option 2">Option 2</option>
 							<option value="Option 3">Option 3</option>
 						</select>
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
-						<label for="checkbox-1" >Checkboxes</label>
-						<div class="controls">
+					<div class="form-group draggable segment">
+						<label for="checkboxes" >Checkboxes</label>
+						<div class="checkboxes">
 							<label class="checkbox" for="checkbox_1">
 								<input type="checkbox" name="checkbox" id="checkbox_1">
 								Option 1
@@ -70,11 +67,10 @@
 								Option 3
 							</label>
 						</div>
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
-						<label for="radio-1" >Radios</label>
-						<div class="controls">
+					<div class="form-group draggable segment">
+						<label for="radios" >Radios</label>
+						<div class="radios">
 							<label class="radio" for="radio_1">
 								<input type="radio" name="radio" id="radio_1">
 								Option 1
@@ -88,25 +84,31 @@
 								Option 3
 							</label>
 						</div>
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
+					<div class="form-group draggable segment">
 						<label for="input-date-1" >Date Input</label>
 						<input type="date" class="form-control" id="input-date-1" placeholder="Enter single-line text">
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="form-group draggable">
+					<div class="form-group draggable segment">
 						<label for="input-file-1" >File input</label>
 						<input type="file" id="input-file-1">
-						<p class="help-block">Example block-level help text here.</p>
 					</div>
-					<div class="checkbox draggable">
-						<input type="checkbox" id="invalidCheck" required>
-						<label class="form-check-label" for="invalidCheck">
-							Agree to terms and conditions
-						</label>
+					<div class="form-group draggable segment statictext">
+						<label for="statictext" class="control-label">Static Text</label>
+						<div class="statictext">
+							Enter text here (instructions, guidelines, etc.)
+						</div>
 					</div>
-					<div class="form-group draggable submitbtn">
+					<div class="form-group draggable segment">
+						<label for="tnctext" id="tnclabel">Terms & Conditions</label>
+						<div class="tnctext">
+							<input type="checkbox" id="invalidCheck" required>
+							<label class="form-check-label" for="invalidCheck">
+							Check this box to proceed
+							</label>
+						</div>
+					</div>
+					<div class="form-group draggable segment submitbtn">
 						<button type="submit" class="btn btn-default" >Submit</button>
 					</div>
 				</form>
