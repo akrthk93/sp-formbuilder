@@ -16,20 +16,36 @@
 }
 
 body {
-    background-color: #ddd;
+    background-color: rgba(222, 233, 241, 1);
+    overflow: hidden;
 }
 
+.navbar {
+    background-color:rgba(0, 114, 198, 1);
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
 .toplevel {
     margin-top: -20px;
 }
 
 .elements {
-    padding: 0px 30px 30px 30px;
+    padding: 0px 30px 0px 30px;
     background-color: #fff;
+    border-radius: 5px;
+    height: 811px;
+    margin-top: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+h3 {
+    margin-top: 10px;
 }
 
 .segment {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .btnlabel {
@@ -55,4 +71,8 @@ body {
 .buildertext {
     font-size: 24px;
     margin: 0 auto;
+}
+
+.options_modal {
+    width: 10px;
 }

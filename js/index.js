@@ -29,6 +29,7 @@ $(document).ready(function () {
         $copy.remove();
 
         $modal = get_modal(html).modal("show");
+        // $modal.html(html).modal("show");
         $modal.find(".btn").remove();
         $modal.find(".modal-title").html("View HTML");
         $modal.find(":input:first").select().focus();
@@ -71,7 +72,7 @@ var setup_draggable = function () {
 
                 // tools
                 $('<p class="tools">\
-						<a class="edit-link">Edit HTML<a> | \
+						<a class="edit-link">Edit Field<a> | \
 						<a class="remove-link">Remove</a></p>').appendTo($el);
             } else {
                 if ($(this)[0] != $orig.parent()[0]) {
@@ -109,14 +110,31 @@ var get_modal = function (content) {
     return modal;
 };
 
+function updateHTML(label, placeholder) {
+    var code = $('<label for="input-text-1">' + label + '</label>\
+    <input type="text" class="form-control" id="input-id-1" placeholder=' + placeholder + '>').appendTo(document.body);
+
+    return code;
+}
+
 $(document).on("click", ".edit-link", function (ev) {
     var $el = $(this).parent().parent();
     var $el_copy = $el.clone();
 
     var $edit_btn = $el_copy.find(".edit-link").parent().remove();
 
+    // var $modal = $('#options-modal').modal('show');
     var $modal = get_modal(html_beautify($el_copy.html())).modal("show");
     $modal.find(":input:first").focus();
+    // $modal.find(".btn-success").click(function (ev2) {
+    //     var label = $modal.find("#input-label").val();
+    //     var placeholder = $modal.find("#input-placeholder").val();
+    //     console.log(updateHTML(label, placeholder));
+    //     $el.html(updateHTML(label, placeholder));
+    //     $edit_btn.appendTo($el);
+    //     $modal.modal("hide");
+    //     return false;
+    // })
     $modal.find(".btn-success").click(function (ev2) {
         var html = $modal.find("textarea").val();
         if (!html) {
