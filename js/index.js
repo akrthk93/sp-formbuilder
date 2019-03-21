@@ -123,29 +123,29 @@ $(document).on("click", ".edit-link", function (ev) {
 
     var $edit_btn = $el_copy.find(".edit-link").parent().remove();
 
-    // var $modal = $('#options-modal').modal('show');
-    var $modal = get_modal(html_beautify($el_copy.html())).modal("show");
+    var $modal = $('#options-modal').modal('show');
+    // var $modal = get_modal(html_beautify($el_copy.html())).modal("show");
     $modal.find(":input:first").focus();
-    // $modal.find(".btn-success").click(function (ev2) {
-    //     var label = $modal.find("#input-label").val();
-    //     var placeholder = $modal.find("#input-placeholder").val();
-    //     console.log(updateHTML(label, placeholder));
-    //     $el.html(updateHTML(label, placeholder));
-    //     $edit_btn.appendTo($el);
-    //     $modal.modal("hide");
-    //     return false;
-    // })
     $modal.find(".btn-success").click(function (ev2) {
-        var html = $modal.find("textarea").val();
-        if (!html) {
-            $el.remove();
-        } else {
-            $el.html(html);
-            $edit_btn.appendTo($el);
-        }
+        var label = $modal.find("#input-label").val();
+        var placeholder = $modal.find("#input-placeholder").val();
+        console.log(updateHTML(label, placeholder));
+        $el.html(updateHTML(label, placeholder));
+        $edit_btn.appendTo($el);
         $modal.modal("hide");
         return false;
     })
+    // $modal.find(".btn-success").click(function (ev2) {
+    //     var html = $modal.find("textarea").val();
+    //     if (!html) {
+    //         $el.remove();
+    //     } else {
+    //         $el.html(html);
+    //         $edit_btn.appendTo($el);
+    //     }
+    //     $modal.modal("hide");
+    //     return false;
+    // })
 });
 
 $(document).on("click", ".remove-link", function (ev) {
